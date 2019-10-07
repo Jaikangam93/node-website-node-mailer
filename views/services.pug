@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h3.mt-4.mb-2 Services page
+
+  each service, i in services
+    div.card.mb-4 
+      h5 #{service.name}
+      p #{service.description}
+      p
+        | Price Range: #{service.price_range}
